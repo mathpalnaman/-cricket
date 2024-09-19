@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <nav className="font-bold text-md text-white p-4 bg-gray-800">
+    <nav className="font-bold text-md text-white p-4 bg-black relative z-20">
       <div className="container mx-auto flex justify-center">
         <ul className="flex space-x-8">
           <li className="relative group">
@@ -28,6 +28,11 @@ export default function Navbar() {
           <li className="relative group">
             <Link to="/contact" className="nav-link">
               Contact
+            </Link>
+          </li>
+          <li className="relative group">
+            <Link to="/tournamentregistration" className="nav-link">
+              Registration
             </Link>
           </li>
         </ul>
