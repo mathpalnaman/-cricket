@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Step1({ formData, handleChange, nextStep }) {
+export default function Step1({ formData, handleChange, nextStep}) {
   return (
     <div>
       <div className="mb-4">
