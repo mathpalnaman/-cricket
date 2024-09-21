@@ -27,7 +27,7 @@ export default function Navbar() {
           </li>
           <li className="relative group">
             <Link to="/contact" className="nav-link">
-              Contact
+              Contact Us
             </Link>
           </li>
           <li className="relative group">
