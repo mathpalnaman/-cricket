@@ -58,6 +58,8 @@ export default function TournamentRegistration() {
   const prevStep = () => setStep((prevStep) => prevStep - 1);
   const submitForm = () => {
     console.log("Form submitted:", formData);
+  
+    alert("Thank you for registering!");
   };
 
   return (
@@ -88,8 +90,14 @@ export default function TournamentRegistration() {
         />
       )}
       {step === 4 && (
-        <Step4 formData={formData} handleBannerUpload={handleBannerUpload} prevStep={prevStep} submitForm={submitForm} />
+         <Step4
+         formData={formData}
+         handleBannerUpload={handleBannerUpload}
+         prevStep={prevStep}
+         submitForm={submitForm}
+       />
       )}
+     
     </div>
   );
 }
