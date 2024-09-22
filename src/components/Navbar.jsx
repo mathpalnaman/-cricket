@@ -6,9 +6,12 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-center">
         <ul className="flex space-x-8">
           <li className="relative group">
-            <Link to="/home" className="nav-link">
-              Home
-            </Link>
+          <Link 
+            to="/" 
+            className="hover:underline decoration-2 underline-offset-4 transition duration-300"
+          >
+            Home
+          </Link>
           </li>
           <li className="relative group">
             <Link to="/about" className="nav-link">
@@ -20,11 +23,11 @@ export default function Navbar() {
               Services
             </Link>
           </li>
-          <li className="relative group">
+          {/* <li className="relative group">
             <Link to="/blog" className="nav-link">
               Blog
             </Link>
-          </li>
+          </li> */}
           <li className="relative group">
             <Link to="/contact" className="nav-link">
               Contact Us
