@@ -34,7 +34,7 @@ Your browser does not support the video tag.
         </div>
       </div>
 
-      <div className="h-full py-12 overflow-x-scroll bg-white mx-auto scrollbar-hide">
+      <div className="h-full py-12 overflow-x-scroll bg-black mx-auto scrollbar-hide">
         <motion.div
           className="flex"
           animate={{

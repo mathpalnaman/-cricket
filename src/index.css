@@ -172,13 +172,13 @@ span {
 }
 
 .match-style-button:hover {
-  background-color: #e0e0e0;
+  background-color: #100808d8;
   transform: scale(1.05);
 }
 
 .match-style-button.active {
-  background-color: #ccc;
-  border-color: #262626;
+  background-color:black;
+  border-color: grey;
   transform: scale(1.1);
 }
 .ball-type-button {
@@ -189,7 +189,7 @@ span {
   height: 100px;
   margin: 10px;
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: black;
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 50%; /* Circular button */
@@ -203,7 +203,7 @@ span {
 }
 
 .ball-type-button:hover {
-  background-color: #e0e0e0;
+  background-color:#ccc;
   transform: scale(1.05);
 }
 
