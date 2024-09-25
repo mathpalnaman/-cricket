@@ -14,7 +14,6 @@ export default function Landing() {
   return (
     <div className="w-full overflow-hidden">
       <div className="h-screen relative">
-        {/* Background Video */}
         <video
           autoPlay
           loop
@@ -25,7 +24,6 @@ export default function Landing() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Welcome text overlay */}
         <div className="relative z-10 flex justify-end items-center h-full">
           <h1 className="text-white text-6xl font-bold animate-pulse pr-16">
             Welcome to CricFolio
@@ -33,8 +31,7 @@ export default function Landing() {
         </div>
       </div>
 
-      {/* Matches Scrolling Section */}
-      <div className="h-full py-12 overflow-x-scroll bg-black mx-auto scrollbar-hide">
+      <div className="h-full py-12 overflow-x-scroll bg-slate-300 mx-auto scrollbar-hide">
         <motion.div
           className="flex"
           animate={{

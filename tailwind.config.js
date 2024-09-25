@@ -13,9 +13,9 @@ export default {
         'strikers': "url('/src/utilities/images/striker.png')",
         'phoenix': "url('/src/utilities/images/phoenix.png')",
         'titans': "url('/src/utilities/images/titans.png')",
-        'Aboutus': "url('/src/utilities/images/stadium.jpg')",
-        'service': "url('/src/utilities/images/cricketplayer.jpg')",
-        'register': "url('/src/utilities/images/cricketplayer2.jpg')",
+        //'Aboutus': "url('/src/utilities/images/stadium.jpg')",
+        'contactus': "url('/src/utilities/images/stadiumm.jpg')",
+        'register': "url('/src/utilities/images/cricketball.jpg')",
         // 'service': "url('/src/utilities/images/cricketplayer.jpg')",
       },keyframes: {
         deconstructed1: {

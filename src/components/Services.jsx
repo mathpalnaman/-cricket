@@ -3,8 +3,8 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="bg-service h-screen w-full bg-cover">
-      <div className="services-container max-w-4xl mx-auto p-6">
+    <div className="bg-register h-screen w-full bg-cover">
+      <div className="services-container text-black max-w-4xl mx-auto p-6">
       <h2 className="text-4xl font-bold text-center mb-6">Our Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
         <div className="service-item border p-4 rounded shadow">

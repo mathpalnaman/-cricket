@@ -7,7 +7,7 @@ import Stepper from "./Stepper";
 
 export default function TournamentRegistration() {
   const [step, setStep] = useState(1);
-  const [formSubmitted, setFormSubmitted] = useState(false); // Track submission state
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     tournamentName: "",
     city: "",
@@ -20,7 +20,7 @@ export default function TournamentRegistration() {
     matchStyle: "",
     predefinedRules: [],
     customRules: "",
-    banner: null, // Ensure banner is validated
+    banner: null,
   });
 
   const handleChange = (e) => {
@@ -55,7 +55,6 @@ export default function TournamentRegistration() {
     setFormData((prevData) => ({ ...prevData, banner: e.target.files[0] }));
   };
 
-  // Helper function to show an alert if a field is empty
   const validateField = (fieldValue, fieldName) => {
     if (!fieldValue) {
       alert(`Please fill in the ${fieldName}`);
@@ -64,7 +63,6 @@ export default function TournamentRegistration() {
     return true;
   };
 
-  // Validation for each step with individual field alerts
   const validateStep = () => {
     if (step === 1) {
       const { tournamentName, city, stadium } = formData;
@@ -103,7 +101,6 @@ export default function TournamentRegistration() {
   };
 
   const nextStep = () => {
-    // Validate before moving to the next step
     if (validateStep()) {
       setStep((prevStep) => prevStep + 1);
     }
@@ -112,57 +109,58 @@ export default function TournamentRegistration() {
   const prevStep = () => setStep((prevStep) => prevStep - 1);
 
   const submitForm = () => {
-    // Validate the final step before submission
     if (validateStep()) {
       console.log("Form submitted:", formData);
-      setFormSubmitted(true); // Set the form as submitted
+      setFormSubmitted(true); 
     }
   };
 
   return (
-    <div className="max-w-lg  p-4 my-10 mx-auto">
-      {formSubmitted ? (
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">Thank you for registering!</h2>
-          <p>Your form has been successfully submitted.</p>
-        </div>
-      ) : (
-        <>
-          <Stepper step={step} />
-          {step === 1 && <Step1 formData={formData} handleChange={handleChange} nextStep={nextStep} />}
-          {step === 2 && (
-            <Step2
-              formData={formData}
-              handleButtonClick={handleButtonClick}
-              handleBallButtonClick={handleBallButtonClick}
-              handleMatchStyleClick={handleMatchStyleClick}
-              activeButton={formData.category}
-              activeBallButton={formData.ballType}
-              activeMatchStyle={formData.matchStyle}
-              nextStep={nextStep}
-              prevStep={prevStep}
-            />
-          )}
-          {step === 3 && (
-            <Step3
-              formData={formData}
-              predefinedRulesOptions={["Rule 1", "Rule 2", "Rule 3"]}
-              handleCheckboxChange={handleCheckboxChange}
-              handleChange={handleChange}
-              nextStep={nextStep}
-              prevStep={prevStep}
-            />
-          )}
-          {step === 4 && (
-            <Step4
-              formData={formData}
-              handleBannerUpload={handleBannerUpload}
-              prevStep={prevStep}
-              submitForm={submitForm} // Submit form with validation
-            />
-          )}
-        </>
-      )}
-    </div>
+    // <div className= "bg-register h-screen w-dull bg-cover">
+      <div className="max-w-lg  p-4  mx-auto">
+    {formSubmitted ? (
+      <div className="text-center">
+        <h2 className="text-3xl font-bold mb-4">Thank you for registering!</h2>
+        <p>Your form has been successfully submitted.</p>
+      </div>
+    ) : (
+      <>
+        <Stepper step={step} />
+        {step === 1 && <Step1 formData={formData} handleChange={handleChange} nextStep={nextStep} />}
+        {step === 2 && (
+          <Step2
+            formData={formData}
+            handleButtonClick={handleButtonClick}
+            handleBallButtonClick={handleBallButtonClick}
+            handleMatchStyleClick={handleMatchStyleClick}
+            activeButton={formData.category}
+            activeBallButton={formData.ballType}
+            activeMatchStyle={formData.matchStyle}
+            nextStep={nextStep}
+            prevStep={prevStep}
+          />
+        )}
+        {step === 3 && (
+          <Step3
+            formData={formData}
+            predefinedRulesOptions={["Rule 1", "Rule 2", "Rule 3"]}
+            handleCheckboxChange={handleCheckboxChange}
+            handleChange={handleChange}
+            nextStep={nextStep}
+            prevStep={prevStep}
+          />
+        )}
+        {step === 4 && (
+          <Step4
+            formData={formData}
+            handleBannerUpload={handleBannerUpload}
+            prevStep={prevStep}
+            submitForm={submitForm} 
+          />
+        )}
+      </>
+    )}
+  </div>
+  // </div>
   );
 }

@@ -21,7 +21,8 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+    <div className="bg-contactus  h-screen w-full bg-cover">
+      <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg">
       {formSubmitted ? (
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Thank you for your request!</h2>
@@ -77,6 +78,7 @@ export default function ContactUs() {
           </button>
         </form>
       )}
+    </div>
     </div>
   );
 }

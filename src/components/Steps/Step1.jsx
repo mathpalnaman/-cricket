@@ -4,7 +4,7 @@ export default function Step1({ formData, handleChange, nextStep}) {
   return (
     <div>
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">Tournament Name:</label>
+        <label className="block text-2xl font-semibold mb-1">Tournament Name:</label>
         <input
           type="text"
           name="tournamentName"
@@ -17,7 +17,7 @@ export default function Step1({ formData, handleChange, nextStep}) {
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">City:</label>
+        <label className="block text-2xl font-semibold mb-1">City:</label>
         <input
           type="text"
           name="city"
@@ -30,7 +30,7 @@ export default function Step1({ formData, handleChange, nextStep}) {
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">Stadium:</label>
+        <label className="block text-2xl font-semibold mb-1">Stadium:</label>
         <input
           type="text"
           name="stadium"
@@ -43,7 +43,7 @@ export default function Step1({ formData, handleChange, nextStep}) {
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">Organizer Name:</label>
+        <label className="block text-2xl font-semibold mb-1">Organizer Name:</label>
         <input
           type="text"
           name="organizerName"
@@ -56,7 +56,7 @@ export default function Step1({ formData, handleChange, nextStep}) {
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">Start Date:</label>
+        <label className="block text-2xl font-semibold mb-1">Start Date:</label>
         <input
           type="date"
           name="startDate"
@@ -68,7 +68,7 @@ export default function Step1({ formData, handleChange, nextStep}) {
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-medium mb-1">End Date:</label>
+        <label className="block text-2xl font-semibold mb-1">End Date:</label>
         <input
           type="date"
           name="endDate"
