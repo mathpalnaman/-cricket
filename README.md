@@ -1,4 +1,3 @@
-# React + Vite
 # CricFolio 🏏
 
 **CricFolio** is a web platform designed for cricket fans, players, and tournament organizers. It offers features such as tournament registration, match schedules, trending events, and a seamless user experience with a responsive design.
