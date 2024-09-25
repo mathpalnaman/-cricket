@@ -120,7 +120,7 @@ export default function TournamentRegistration() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4">
+    <div className="max-w-lg  p-4 my-10 mx-auto">
       {formSubmitted ? (
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Thank you for registering!</h2>
