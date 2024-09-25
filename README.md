@@ -25,7 +25,6 @@ CricFolio provides users with:
 - **Frontend**: React.js, Tailwind CSS
 - **Animations**: Framer Motion
 - **Routing**: React Router
-- **Backend (Optional)**: Node.js, Express.js (if applicable)
 - **Version Control**: Git, GitHub
 
 ## 📂 Folder Structure
