@@ -211,4 +211,27 @@ span {
   background-color: #ccc;
   border-color: #262626
 }
-/* card */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container {
+  width: 100%; /* Use percentage */
+  padding: 1em; /* Use em/rem */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
