@@ -89,7 +89,7 @@ export default function Step1({ formData, handleChange, nextStep }) {
         </button>
       </div>
 
-      <div className="w-1/2 h-full bg-cover bg-center" style={{ backgroundImage: "url('/public/vk')" }}>
+      <div className="w-1/2 h-full bg-cover bg-center" style={{ backgroundImage: "url('/vk')" }}>
       </div>
     </div>
   );
