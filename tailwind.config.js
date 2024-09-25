@@ -14,6 +14,8 @@ export default {
         'phoenix': "url('/src/utilities/images/phoenix.png')",
         'titans': "url('/src/utilities/images/titans.png')",
         'Aboutus': "url('/src/utilities/images/stadium.jpg')",
+        'service': "url('/src/utilities/images/cricketplayer.jpg')",
+        
       },keyframes: {
         deconstructed1: {
           '0%': { transform: 'translateX(100%)' },
