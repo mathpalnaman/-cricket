@@ -15,7 +15,8 @@ export default {
         'titans': "url('/src/utilities/images/titans.png')",
         'Aboutus': "url('/src/utilities/images/stadium.jpg')",
         'service': "url('/src/utilities/images/cricketplayer.jpg')",
-        
+        'register': "url('/src/utilities/images/cricketplayer2.jpg')",
+        // 'service': "url('/src/utilities/images/cricketplayer.jpg')",
       },keyframes: {
         deconstructed1: {
           '0%': { transform: 'translateX(100%)' },
