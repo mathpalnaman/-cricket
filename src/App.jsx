@@ -1,4 +1,4 @@
-import { Route,BrowserRouter,Routes } from "react-router-dom"
+import { Route,HashRouter,Routes } from "react-router-dom"
 import './index.css'; 
 import Landing from "./components/Landing"
 import TournamentRegistration from "./components/TournamentRegistration";
@@ -10,7 +10,7 @@ function App() {
 
   return (
   
-    <BrowserRouter>
+    <HashRouter>
     <Navbar/>
       <Routes>
         <Route path="/" element={<Landing/>}></Route>
@@ -21,7 +21,7 @@ function App() {
         <Route path="/services" element={<Services/>}></Route>
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
 
   )
