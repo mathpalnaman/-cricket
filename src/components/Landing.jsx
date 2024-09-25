@@ -28,13 +28,13 @@ export default function Landing() {
 Your browser does not support the video tag.
         </video>
         <div className="relative z-10">
-          <Navbar />
+          {/* <Navbar /> */}
           <div className="absolute left-8 top-1/3 transform translate-y-1/2 animate-slide-in">
         </div>
         </div>
       </div>
 
-      <div className="h-full py-12 overflow-x-scroll bg-black mx-auto scrollbar-hide">
+      <div className="h-full py-12 overflow-x-scroll mx-auto scrollbar-hide"  style={{ backgroundColor: '#e5e7ebc9' }}>
         <motion.div
           className="flex"
           animate={{

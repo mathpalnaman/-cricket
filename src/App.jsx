@@ -11,6 +11,7 @@ function App() {
   return (
   
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Landing/>}></Route>
         <Route path="/tournamentregistration" element={<TournamentRegistration/>}></Route>

@@ -22,7 +22,7 @@ export default function Trending() {
           style={{ backgroundImage: `url('${featuredArticle.image}')` }}
         ></div>
 
-        <div className="relative z-10 h-full bg-white bg-opacity-50 flex flex-col justify-center p-6 text-black">
+        <div className="relative z-10 h-full bg-black bg-opacity-50 flex flex-col justify-center p-6 text-white">
           <div className="mb-4 text-center">
             {(() => {
               const { day, month } = formatDate(featuredArticle.date);
@@ -47,7 +47,7 @@ export default function Trending() {
               style={{ backgroundImage: `url('${article.image}')` }}
             ></div>
 
-            <div className="relative z-10 h-full bg-white bg-opacity-50 flex flex-col justify-center p-6 text-black">
+            <div className="relative z-10 h-full bg-black bg-opacity-50 flex flex-col justify-center p-6 text-white">
               <div className="mb-4 text-center">
                 {(() => {
                   const { day, month } = formatDate(article.date);

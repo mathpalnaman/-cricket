@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
+  <navbar/>
   return (
     <nav className="font-bold text-md text-white p-4 bg-black relative z-20">
       <div className="container mx-auto flex justify-center">

@@ -13,6 +13,7 @@ export default {
         'strikers': "url('/src/utilities/images/striker.png')",
         'phoenix': "url('/src/utilities/images/phoenix.png')",
         'titans': "url('/src/utilities/images/titans.png')",
+        'Aboutus': "url('/src/utilities/images/stadium.jpg')",
       },keyframes: {
         deconstructed1: {
           '0%': { transform: 'translateX(100%)' },
