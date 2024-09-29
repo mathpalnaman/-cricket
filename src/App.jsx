@@ -6,6 +6,7 @@ import ContactUs from "./components/ContactUs";
 import About from "./components/About";
 import Navbar from "./components/Navbar"; // Navbar component
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 function App() {
 
   return (
@@ -19,8 +20,8 @@ function App() {
         <Route path="/about" element={<About/>}></Route>
         <Route path="/navbar" element={<Navbar/>}></Route>
         <Route path="/services" element={<Services/>}></Route>
-
       </Routes>
+      <Footer/>
     </HashRouter>
 
 

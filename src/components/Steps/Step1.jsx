@@ -3,8 +3,7 @@ import React from "react";
 export default function Step1({ formData, handleChange, nextStep }) {
   return (
     <div className="flex justify-between items-center h-screen">
-     
-      <div className="w-1/2 ml-10"> 
+      <div className="w-1/2 ml-10">
         <div className="mb-4">
           <label className="block text-sm font-medium mb-1">Tournament Name:</label>
           <input
@@ -88,8 +87,12 @@ export default function Step1({ formData, handleChange, nextStep }) {
           Next
         </button>
       </div>
-
-      <div className="w-1/2 h-full bg-cover bg-center" style={{ backgroundImage: "url('/vk')" }}>
+      
+      {/* Right Side with vk.webp */}
+      <div
+        className="w-1/2 h-full bg-cover bg-center"
+        style={{ backgroundImage: "url('/src/utilities/images/vk.webp')" }} 
+      >
       </div>
     </div>
   );
